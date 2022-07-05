@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo "Analizando código estático"
                 withSonarQubeEnv('sonarqube-server'){
-                    sh "${SONAR_SCANNER}/bin/sonar-scanner"
+                    sh "${SONAR_SCANNER}/bin/sonar-scanner -Dsonar.projectKey=develop"
                 }
                 timeout(time: 3, unit: 'MINUTES'){
                 waitForQualityGate abortPipeline: true
