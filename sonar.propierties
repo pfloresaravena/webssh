@@ -1,0 +1,17 @@
+# datos del proyecto
+sonar.projectKey = tarea4
+sonar.projectName = tarea4
+sonar.projectVersion = 1.0
+
+# analis de codigo
+#sonar.tests=src/test/java
+#sonar.sources=src/main/java
+#sonar.java.binaries=target
+#sonar.java.libraries.empty=true
+
+# cobertura jacoco
+#sonar.coverage.jacoco.reportPaths=target/jacoco.exec
+#sonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
+
+# codificacion
+sonar.sourceEncoding=UTF-8
